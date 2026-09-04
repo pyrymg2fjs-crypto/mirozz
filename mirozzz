@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>ASCII Art</title>
+<style>
+  body {
+    background: #0d1117;
+    color: #39ff14;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: monospace;
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+    animation: flicker 2.5s infinite;
+  }
+  pre {
+    font-size: 14px;
+    line-height: 1.1;
+    text-shadow: 0 0 5px #39ff14;
+    animation: float 3s ease-in-out infinite, flicker 2.5s infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+  }
+  @keyframes flicker {
+    0%, 100% { text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14; opacity: 1; }
+    45% { text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14; opacity: 1; }
+    46% { opacity: 0.6; }
+    47% { opacity: 1; }
+    48% { text-shadow: 0 0 2px #39ff14; opacity: 0.8; }
+    50% { text-shadow: 0 0 15px #39ff14, 0 0 25px #39ff14; opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<h1>Craked by Miro</h1>
+<pre>
+       .-"""""-.
+      /         \
+     |  .-. .-.  |
+     |  | | | |  |
+     |  '-' '-'  |
+     |    ___    |
+     |   (___)   |
+      \         /
+       '-------'
+      / | | | | \
+     /  | | | |  \
+    /___|_|_|_|___\
+       |     |
+       |     |
+      _|     |_
+     |_________|
+</pre>
+</body>
+</html>
